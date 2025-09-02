@@ -1,0 +1,9 @@
+.heroBackgroundGradient {
+  background: linear-gradient(
+    to bottom,
+    #4756e8 0%,
+    #3c4cdb 17%,
+    #2433be 57%,
+    #0015d8 100%
+  );
+}

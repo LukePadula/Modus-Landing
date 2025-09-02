@@ -1,0 +1,13 @@
+.heroTitleGradient {
+  background: linear-gradient(
+    to right,
+    #00051078 0%,
+    #3443ce 54%,
+    #4251e2 100%
+  );
+  color: black;
+  /* background-color: red; */
+}
+.contentTitleGradient {
+  background: linear-gradient(to right, #3b47b9 0%, #3541b7 50%, #9a8aff 100%);
+}
