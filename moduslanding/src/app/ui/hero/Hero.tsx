@@ -6,9 +6,7 @@ import SectionHeaderBackground from "../SectionHeaderBackground";
 
 export default function Hero() {
   return (
-    <div
-      className={`${styles.heroBackgroundGradient} h-screen w-screen relative`}
-    >
+    <div className={`${styles.heroBackgroundGradient} h-screen relative`}>
       <Header />
       <div className="p-5 sm:p-15 pt-26 sm:pt-26">
         <BackgroundGrid />

@@ -56,13 +56,15 @@ export default function LandingContent() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center p-5 sm:p-15 pt-8 sm:pt-26">
-      <SectionHeaderBackground styleType="content">
-        <h1 className="font-semibold text-3xl">A better workflow</h1>
-      </SectionHeaderBackground>
-      <h1 className="font-semibold text-3xl text-black text-center">
-        for the whole tenancy cycle.
-      </h1>
+    <section className="flex flex-col justify-center items-center p-5 sm:p-15 ">
+      <div className="mt-14 mb-14 text-center">
+        <SectionHeaderBackground styleType="content">
+          <h1 className="font-semibold text-3xl">A better workflow</h1>
+        </SectionHeaderBackground>
+        <h1 className="font-semibold text-3xl text-black text-center">
+          for the whole tenancy cycle.
+        </h1>
+      </div>
       <div className="grid md:grid-cols-2 gap-6">
         {tenancyCards.map((card, index) => (
           <TenancyCard
@@ -74,12 +76,14 @@ export default function LandingContent() {
           />
         ))}
       </div>
-      <h1 className="font-semibold text-3xl text-black text-center">
-        Inspections focusing on what
-      </h1>
-      <SectionHeaderBackground styleType="content">
-        <h1 className="font-semibold text-3xl">matters most</h1>
-      </SectionHeaderBackground>
+      <div className="mt-14 mb-14 text-center">
+        <h1 className="font-semibold text-3xl text-black text-center">
+          Inspections focusing on what
+        </h1>
+        <SectionHeaderBackground styleType="content">
+          <h1 className="font-semibold text-3xl">matters most</h1>
+        </SectionHeaderBackground>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-stretch">
         {sellingPointCards.map((card, i) => (
