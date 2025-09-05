@@ -12,11 +12,9 @@ export default function ContactForm() {
             Get in touch
           </h1>
           <p className="text-black mb-5">
-            <p>
-              {
-                "We'd love to hear from you—whether it's feedback, ideas, or just to connect."
-              }
-            </p>
+            {
+              "We'd love to hear from you—whether it's feedback, ideas, or just to connect."
+            }
           </p>
           <div className="text-neutral-500 font-semibold">
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
