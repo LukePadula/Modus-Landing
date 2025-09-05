@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sen.className} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${sen.className} ${geistMono.variable} antialiased scroll-smooth`}
+      >
         {children}
       </body>
     </html>

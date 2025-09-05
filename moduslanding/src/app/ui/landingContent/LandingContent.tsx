@@ -65,7 +65,7 @@ export default function LandingContent() {
           for the whole tenancy cycle.
         </h1>
       </div>
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-3 gap-6">
         {tenancyCards.map((card, index) => (
           <TenancyCard
             key={index}

@@ -19,7 +19,7 @@ export default function TenancyCard({
       <div
         className={`${style.tenancyCardGradient} flex flex-col justify-center items-center text-center p-4 rounded-tl-sm rounded-tr-sm`}
       >
-        <div className="p-5 bg-indigo-800 w-4 h-4 flex justify-center items-center rounded-sm">
+        <div className="p-4.5 bg-indigo-800 w-4 h-4 flex justify-center items-center rounded-sm mb-2">
           <FontAwesomeIcon icon={icon} />
         </div>
         <h2 className="font-semibold text-xl">{title}</h2>

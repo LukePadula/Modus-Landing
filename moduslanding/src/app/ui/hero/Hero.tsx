@@ -3,14 +3,20 @@ import BackgroundGrid from "./BackgroundGrid";
 import LaunchingSoon from "./LaunchingSoon";
 import Header from "./Header";
 import SectionHeaderBackground from "../SectionHeaderBackground";
+import HeroImage from "../HeroImage";
 
 export default function Hero() {
   return (
     <div className={`${styles.heroBackgroundGradient} h-screen relative`}>
       <Header />
-      <div className="p-5 sm:p-15 pt-26 sm:pt-26">
-        <BackgroundGrid />
-        <LaunchingSoon />
+      <div className="p-5 sm:p-15 pt-26 sm:pt-22">
+        <BackgroundGrid lineType="dark" />
+        <div className="absolute right-3 top-15 md:hidden">
+          <LaunchingSoon />
+        </div>
+        <div className="hidden md:block">
+          <HeroImage />
+        </div>
         <div className="sm:grid grid-cols-2 gap-4 z-10 relative">
           <div>
             <SectionHeaderBackground styleType="hero">
@@ -19,7 +25,7 @@ export default function Hero() {
             <h1 className="text-3xl md:text-5xl font-semibold">
               your property inspections
             </h1>
-            <div className=" bg-white flex relative w-[90%] mt-8 rounded-sm h-12 max-w-86">
+            <div className=" bg-white flex relative w-[90%] mt-8 rounded-sm h-10 max-w-86">
               <input
                 type="text"
                 placeholder="Your Email"

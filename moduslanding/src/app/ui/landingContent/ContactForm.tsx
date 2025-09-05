@@ -1,28 +1,82 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import BackgroundGrid from "../hero/BackgroundGrid";
+
 export default function ContactForm() {
   return (
-    <section className="p-5 bg-indigo-50">
-      <h1 className="font-semibold text-3xl text-brand mb-3">Get in touch</h1>
-      <p className="text-black mb-3">
-        We'd love to hear from you—whether it's feedback, ideas, or just to
-        connect. Your input helps us shape Modus into the best tool for you.
-      </p>
-      <div className="text-neutral-500 font-semibold">
-        <FontAwesomeIcon icon={faEnvelope} size="lg" />
-        <small className="ml-2 text-base">hello@modus.tech.com</small>
+    <section className="md:grid md:grid-cols-2">
+      <div className="p-5 bg-indigo-50 relative pb-12 pt-12">
+        <BackgroundGrid lineType="light" />
+        <div className="relative z-10">
+          <h1 className="font-semibold text-3xl text-brand mb-5">
+            Get in touch
+          </h1>
+          <p className="text-black mb-5">
+            We'd love to hear from you—whether it's feedback, ideas, or just to
+            connect. Your input helps us shape Modus into the best tool for you.
+          </p>
+          <div className="text-neutral-500 font-semibold">
+            <FontAwesomeIcon icon={faEnvelope} size="lg" />
+            <small className="ml-2 text-sm">hello@modus.tech.com</small>
+          </div>
+        </div>
       </div>
-      <form className="w-full max-w-sm">
-        <div className="w-full md:w-1/2 px-3">
-          <label className="tracking-wide text-gray-700 text-xs font-bold mb-2">
-            Last Name
+      <form>
+        <div className="w-full bg-gray-50 p-5 md:pt-12">
+          <label
+            className="tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="name"
+          >
+            Name
           </label>
           <input
-            className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-last-name"
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
+            id="name"
             type="text"
-            placeholder="Doe"
           ></input>
+          <label
+            className="tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="email"
+          >
+            Email
+          </label>
+          <input
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
+            id="email"
+            type="email"
+          ></input>
+          <label
+            className="tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="company"
+          >
+            Company
+          </label>
+          <input
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
+            id="company"
+            type="text"
+          ></input>
+          <label
+            className="tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="message"
+          >
+            Message
+          </label>
+
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows={6}
+            className=" p-2 w-full resize-y appearance-none block bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-gray-400"
+            required
+          />
+
+          <button
+            type="submit"
+            className="text-white bg-brand p-3 w-full rounded text-sm my-8 font-semibold cursor-pointer"
+          >
+            Submit
+          </button>
         </div>
       </form>
     </section>

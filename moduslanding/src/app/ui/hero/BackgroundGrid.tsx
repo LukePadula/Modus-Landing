@@ -1,4 +1,8 @@
-export default function BackgroundGrid() {
+interface Props {
+  lineType: "light" | "dark";
+}
+
+export default function BackgroundGrid({ lineType }: Props) {
   return (
     <div
       className="absolute inset-0 grid overflow-hidden"
@@ -7,7 +11,12 @@ export default function BackgroundGrid() {
       }}
     >
       {Array.from({ length: 500 }).map((_, i) => (
-        <div key={i} className="aspect-square border border-black/6" />
+        <div
+          key={i}
+          className={`aspect-square border  ${
+            lineType === "light" ? "border-red" : "border-black/7"
+          }`}
+        />
       ))}
     </div>
   );
