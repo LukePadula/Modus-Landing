@@ -20,9 +20,9 @@ export default function Hero() {
         <div className="sm:grid grid-cols-2 gap-4 z-10 relative">
           <div>
             <SectionHeaderBackground styleType="hero">
-              <h1 className="text-3xl md:text-5xl font-semibold">Streamline</h1>
+              <h1 className="text-5xl font-semibold">Streamline</h1>
             </SectionHeaderBackground>
-            <h1 className="text-3xl md:text-5xl font-semibold">
+            <h1 className="text-5xl font-semibold">
               your property inspections
             </h1>
             <div className=" bg-white flex relative w-[90%] mt-8 rounded-sm h-10 max-w-86">
