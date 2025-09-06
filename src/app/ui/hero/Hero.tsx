@@ -7,7 +7,9 @@ import HeroImage from "../HeroImage";
 
 export default function Hero() {
   return (
-    <div className={`${styles.heroBackgroundGradient} h-screen relative`}>
+    <div
+      className={`${styles.heroBackgroundGradient} h-screen relative text-white`}
+    >
       <Header />
       <div className="p-5 sm:p-15 pt-26 sm:pt-22">
         <BackgroundGrid lineType="dark" />
