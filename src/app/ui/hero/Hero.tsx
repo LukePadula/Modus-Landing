@@ -16,18 +16,21 @@ export default function Hero() {
         <div className="absolute right-3 top-15 md:hidden">
           <LaunchingSoon />
         </div>
+
         <div className="hidden md:block">
           <HeroImage />
         </div>
         <div className="sm:grid grid-cols-2 gap-4 z-10 relative">
-          <div>
+          <div className="animate-slide-up opacity-0">
             <SectionHeaderBackground styleType="hero">
-              <h1 className="text-5xl font-semibold">Streamline</h1>
+              <h1 className="text-5xl text-white font-semibold leading-tight">
+                Streamline
+              </h1>
             </SectionHeaderBackground>
-            <h1 className="text-5xl font-semibold">
+            <h1 className="text-5xl font-semibold leading-tight">
               your property inspections
             </h1>
-            <div className=" bg-white flex relative w-[90%] mt-8 rounded-sm h-10 max-w-86">
+            <div className=" bg-white flex relative w-[90%] mt-8 rounded-sm h-12 max-w-86">
               <input
                 type="text"
                 placeholder="Your Email"

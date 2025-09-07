@@ -14,7 +14,7 @@ export default function BackgroundGrid({ lineType }: Props) {
         <div
           key={i}
           className={`aspect-square border  ${
-            lineType === "light" ? "border-red" : "border-black/7"
+            lineType === "light" ? "border-blue-700/6" : "border-black/7"
           }`}
         />
       ))}

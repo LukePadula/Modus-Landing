@@ -59,7 +59,9 @@ export default function LandingContent() {
     <section className="flex flex-col justify-center items-center p-5 sm:p-15 ">
       <div className="mt-14 mb-14 text-center">
         <SectionHeaderBackground styleType="content">
-          <h1 className="font-semibold text-3xl">A better workflow</h1>
+          <h1 className="font-semibold text-3xl text-white">
+            A better workflow
+          </h1>
         </SectionHeaderBackground>
         <h1 className="font-semibold text-3xl text-black text-center">
           for the whole tenancy cycle.
@@ -77,14 +79,15 @@ export default function LandingContent() {
         ))}
       </div>
       <div className="mt-14 mb-14 text-center">
-        <h1 className="font-semibold text-3xl text-black text-center">
-          Inspections focusing on what
-        </h1>
         <SectionHeaderBackground styleType="content">
-          <h1 className="font-semibold text-3xl">matters most</h1>
+          <h1 className="font-semibold text-3xl text-white">
+            Quality Inspections
+          </h1>
         </SectionHeaderBackground>
+        <h1 className="font-semibold text-3xl text-black text-center">
+          where it matters most
+        </h1>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-stretch">
         {sellingPointCards.map((card, i) => (
           <SellingPoint key={i} icon={card.icon} text={card.text} />
