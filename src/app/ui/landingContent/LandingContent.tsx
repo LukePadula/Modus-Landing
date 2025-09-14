@@ -67,7 +67,7 @@ export default function LandingContent() {
           for the whole tenancy cycle.
         </h1>
       </div>
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-3">
         {tenancyCards.map((card, index) => (
           <TenancyCard
             key={index}
@@ -88,7 +88,7 @@ export default function LandingContent() {
           where it matters most
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 items-stretch">
         {sellingPointCards.map((card, i) => (
           <SellingPoint key={i} icon={card.icon} text={card.text} />
         ))}

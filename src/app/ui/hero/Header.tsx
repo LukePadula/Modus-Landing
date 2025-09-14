@@ -20,13 +20,15 @@ export default function Header() {
   const scrollToDiv = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -48;
+      const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   return (
     <div
-      className={`flex justify-between items-center p-3 fixed w-full z-30 transition-colors duration-300
+      className={`flex justify-between items-center p-3 pl-7 pr-7 fixed w-full z-30 transition-colors duration-300
         ${
           scrolled
             ? "backdrop-blur-lg shadow-[0_4px_20px_rgba(66,81,226,0.4)] opacity-85"
@@ -38,7 +40,9 @@ export default function Header() {
             : "text-white"
         }`}
     >
-      <small className="text-base z-30 font-semibold">Modus</small>
+      <small className="text-base z-30 font-semibold font-indigo-900">
+        Modus
+      </small>
       <div
         className={`flex gap-8 transform transition-all duration-300 ease-out
           ${

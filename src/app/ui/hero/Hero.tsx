@@ -12,8 +12,8 @@ export default function Hero() {
       className={`${styles.heroBackgroundGradient} h-screen relative text-white`}
     >
       <Header />
-      <div className="p-5 sm:p-15 pt-26 sm:pt-22 lg:p-44">
-        <BackgroundGrid lineType="dark" />
+      <div className="p-5 h-[94%] flex justify-items-center items-center md:px-18 lg:px-44">
+        {/* <BackgroundGrid lineType="dark" /> */}
         <div className="absolute right-3 top-15 md:hidden">
           <LaunchingSoon />
         </div>
@@ -22,7 +22,7 @@ export default function Hero() {
           <HeroImage />
         </div>
         <div className="sm:grid grid-cols-2 gap-4 z-10 relative">
-          <div className="animate-slide-up opacity-0 md:mt-[6vh] lg:mt-[12vh]">
+          <div className="animate-slide-up opacity-0">
             <SectionHeaderBackground styleType="hero">
               <h1 className="text-5xl text-white font-semibold leading-tight">
                 Streamline

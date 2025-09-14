@@ -23,7 +23,7 @@ export default function ContactForm() {
         </div>
       </div>
       <form>
-        <div className="w-full bg-gray-50 p-5 relative pt-14 md:px-18 lg:px-44 pb-5">
+        <div className="w-full bg-gray-50 p-5 relative pt-14 md:px-12 lg:px-20 pb-5">
           <label
             className="tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="name"
