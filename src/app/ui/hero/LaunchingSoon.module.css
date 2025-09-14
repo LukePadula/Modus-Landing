@@ -27,5 +27,5 @@
 
 .shake {
   display: inline-block;
-  animation: rotate-shake-pause 4.8s ease-in-out infinite;
+  animation: rotate-shake-pause 3.5s ease-in-out infinite;
 }

@@ -13,7 +13,7 @@ export default function Hero() {
     >
       <Header />
       <div className="p-5 h-[94%] flex justify-items-center items-center md:px-18 lg:px-44">
-        {/* <BackgroundGrid lineType="dark" /> */}
+        <BackgroundGrid lineType="dark" />
         <div className="absolute right-3 top-15 md:hidden">
           <LaunchingSoon />
         </div>
