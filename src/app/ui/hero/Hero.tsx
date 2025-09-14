@@ -31,7 +31,7 @@ export default function Hero() {
             <h1 className="text-5xl font-semibold leading-tight">
               your property inspections
             </h1>
-            <div className=" bg-white flex relative w-[90%] mt-8 rounded-sm h-12 max-w-86">
+            <div className=" bg-white flex relative w-[90%] mt-8 rounded-sm h-14 max-w-86">
               <input
                 type="text"
                 placeholder="Your Email"
