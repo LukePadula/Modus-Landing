@@ -56,8 +56,8 @@ export default function LandingContent() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center p-5 sm:p-15 ">
-      <div className="mt-14 mb-14 text-center">
+    <section className="flex flex-col justify-center items-center px-5 md:px-18 lg:px-44 pb-5 md:pb-12 lg:pb-44 pt-0">
+      <div className="mt-20 mb-14 text-center">
         <SectionHeaderBackground styleType="content">
           <h1 className="font-semibold text-3xl text-white">
             A better workflow
@@ -78,7 +78,7 @@ export default function LandingContent() {
           />
         ))}
       </div>
-      <div className="mt-14 mb-14 text-center">
+      <div className="mt-20 mb-14 text-center">
         <SectionHeaderBackground styleType="content">
           <h1 className="font-semibold text-3xl text-white">
             Quality Inspections

@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        grow: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" }, // or a fixed width, e.g. '300px'
+        },
+      },
+      animation: {
+        grow: "grow 1s ease-out forwards",
+      },
       colors: {
         brand: {
           DEFAULT: "#7c3aed",

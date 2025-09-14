@@ -1,13 +1,23 @@
 .heroTitleGradient {
-  background: linear-gradient(
-    to right,
-    #00051078 0%,
-    #3443ce 54%,
-    #4251e2 100%
-  );
+  background: linear-gradient(to right, #384cff 0%, #485bff 54%, #4b5add 100%);
   color: black;
   /* background-color: red; */
 }
 .contentTitleGradient {
-  background: linear-gradient(to right, #2806ff 0%, #6d7af3 50%, #2806ff 100%);
+  background: linear-gradient(to right, #384cff 0%, #485bff 54%, #8793ff 100%);
+}
+
+.growOut {
+  width: 0;
+  overflow: hidden;
+  animation: growOut 1s ease-out forwards;
+}
+
+@keyframes growOut {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

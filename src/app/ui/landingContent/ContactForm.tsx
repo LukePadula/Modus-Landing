@@ -4,8 +4,8 @@ import BackgroundGrid from "../hero/BackgroundGrid";
 
 export default function ContactForm() {
   return (
-    <section className="md:grid md:grid-cols-2">
-      <div className="p-5 bg-indigo-50 relative pb-12 pt-12">
+    <section id="contact" className="md:grid md:grid-cols-2">
+      <div className="p-5 bg-indigo-50 relative pt-14 md:pl-18 lg:pl-44 pb-5">
         <BackgroundGrid lineType="light" />
         <div className="relative z-10">
           <h1 className="font-semibold text-3xl text-brand mb-5">
@@ -23,7 +23,7 @@ export default function ContactForm() {
         </div>
       </div>
       <form>
-        <div className="w-full bg-gray-50 p-5 md:pt-12">
+        <div className="w-full bg-gray-50 p-5 relative pt-14 md:px-18 lg:px-44 pb-5">
           <label
             className="tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="name"

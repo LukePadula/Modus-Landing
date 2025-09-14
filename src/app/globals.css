@@ -66,11 +66,11 @@ select:focus {
   animation: slide-up 0.8s ease-in forwards;
 }
 
-.header {
+/* .header {
   background: radial-gradient(
     305.178576006421146% 40.52940626129116% at 89.99999932678715%
       0.000010425338692332531%,
-    rgba(66, 81, 226, 0.54) 0%,
+    rgba(66, 81, 226, 0.5 4) 0%,
     var(--token-55b95a12-f700-4ce1-8c5a-09fcad9bf53d, rgb(241, 235, 235)) 100%
   );
-}
+} */

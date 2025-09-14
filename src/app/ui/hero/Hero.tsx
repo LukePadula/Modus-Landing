@@ -8,10 +8,11 @@ import HeroImage from "../HeroImage";
 export default function Hero() {
   return (
     <div
+      id="waitlist"
       className={`${styles.heroBackgroundGradient} h-screen relative text-white`}
     >
       <Header />
-      <div className="p-5 sm:p-15 pt-26 sm:pt-22">
+      <div className="p-5 sm:p-15 pt-26 sm:pt-22 lg:p-44">
         <BackgroundGrid lineType="dark" />
         <div className="absolute right-3 top-15 md:hidden">
           <LaunchingSoon />
@@ -21,7 +22,7 @@ export default function Hero() {
           <HeroImage />
         </div>
         <div className="sm:grid grid-cols-2 gap-4 z-10 relative">
-          <div className="animate-slide-up opacity-0">
+          <div className="animate-slide-up opacity-0 md:mt-[6vh] lg:mt-[12vh]">
             <SectionHeaderBackground styleType="hero">
               <h1 className="text-5xl text-white font-semibold leading-tight">
                 Streamline
@@ -36,7 +37,7 @@ export default function Hero() {
                 placeholder="Your Email"
                 className="bg-white text-black ps-2 w-full rounded-sm"
               />
-              <button className="top-0 bg-indigo-900 m-1 text-sm rounded-sm w-32 p-0.5 pl-1 pr-1">
+              <button className="top-0 bg-indigo-900 m-1 text-sm rounded-sm w-32 p-0.5 pl-1 pr-1 cursor-pointer">
                 Join waitlist
               </button>
             </div>

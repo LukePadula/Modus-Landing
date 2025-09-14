@@ -15,7 +15,7 @@ export default function TenancyCard({
   description,
 }: Props) {
   return (
-    <section className="max-w-sm">
+    <div className="max-w-sm h-full flex flex-col">
       <div
         className={`${style.tenancyCardGradient} flex flex-col justify-center items-center text-center p-4 rounded-tl-lg rounded-tr-lg`}
       >
@@ -23,11 +23,11 @@ export default function TenancyCard({
           <FontAwesomeIcon icon={icon} />
         </div>
         <h2 className="font-semibold text-xl">{title}</h2>
-        <small className="text-sm text-indigo-200">{subtitle}</small>
+        <small className="text-xsm text-indigo-200">{subtitle}</small>
       </div>
-      <p className="text-base p-4 text-center text-black border-solid border-1 border-neutral-300 rounded-bl-lg rounded-br-lg">
+      <p className="text-sm p-4 text-center text-black border border-neutral-200 rounded-bl-lg rounded-br-lg flex-1">
         {description}
       </p>
-    </section>
+    </div>
   );
 }
