@@ -1,11 +1,33 @@
+"use client";
+
+import { useState } from "react";
 import styles from "./Hero.module.css";
 import BackgroundGrid from "./BackgroundGrid";
 import LaunchingSoon from "./LaunchingSoon";
 import Header from "./Header";
 import SectionHeaderBackground from "../SectionHeaderBackground";
 import HeroImage from "../HeroImage";
+import axios from "axios";
+import Turnstile from "react-turnstile";
 
 export default function Hero() {
+  const [email, setEmail] = useState("");
+  const [token, setToken] = useState<string | null>(null);
+
+  // const [consent, setConsent] = useState(false);
+
+  const submitWaitlist = async () => {
+    try {
+      const res = await axios.post(
+        "/api/waitlist",
+        { email, token },
+        { headers: { "Content-Type": "application/json" } }
+      );
+    } catch (err) {
+      console.error("Error:", err);
+    }
+  };
+
   return (
     <div
       id="waitlist"
@@ -36,10 +58,20 @@ export default function Hero() {
                 type="text"
                 placeholder="Your Email"
                 className="bg-white text-black ps-2 w-full rounded-sm"
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <button className="top-0 bg-indigo-900 m-1 text-sm rounded-sm w-32 p-0.5 pl-1 pr-1 cursor-pointer">
+              <button
+                onClick={submitWaitlist}
+                className="top-0 bg-indigo-900 m-1 text-sm rounded-sm w-32 p-0.5 pl-1 pr-1 cursor-pointer"
+              >
                 Join waitlist
               </button>
+            </div>
+            <div className="mt-4">
+              <Turnstile
+                sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                onVerify={(token) => setToken(token)}
+              />
             </div>
           </div>
         </div>

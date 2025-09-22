@@ -1,3 +1,10 @@
 .tenancyCardGradient {
-  background: linear-gradient(to bottom, #4b5cff 0%, #3d4dea 50%);
+  background: linear-gradient(to bottom, #3f4dce 0%, #3d4dea 100%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.6s ease;
+}
+
+.tenancyCardGradient:hover {
+  background-position: top;
 }

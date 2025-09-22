@@ -41,7 +41,7 @@ export default function Header() {
         }`}
     >
       <small className="text-base z-30 font-semibold font-indigo-900">
-        Modus
+        modus
       </small>
       <div
         className={`flex gap-8 transform transition-all duration-300 ease-out
