@@ -1,8 +1,23 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import BackgroundGrid from "../hero/BackgroundGrid";
+import axios from "axios";
+import Turnstile from "react-turnstile";
 
 export default function ContactForm() {
+  const submitContactForm = async () => {
+    try {
+      const res = await axios.post(
+        "/api/waitlist",
+        { email, token },
+        { headers: { "Content-Type": "application/json" } }
+      );
+    } catch (err) {
+      console.error("Error:", err);
+    }
+  };
+
   return (
     <section id="contact" className="md:grid md:grid-cols-2">
       <div className="p-5 bg-indigo-50 relative pt-16 md:pl-22 lg:pl-8 pb-5">
@@ -22,7 +37,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
-      <form>
+      <form onSubmit={submitContactForm}>
         <div className="w-full bg-gray-50 p-5 relative pt-16 md:px-8 lg:px-14 pb-5">
           <label
             className="tracking-wide text-gray-700 text-xs font-bold mb-2"

@@ -40,9 +40,10 @@ export default function Header() {
             : "text-white"
         }`}
     >
-      <small className="text-base z-30 font-semibold font-indigo-900">
+      {/* <small className="text-base z-30 font-semibold font-indigo-900">
         modus
-      </small>
+      </small> */}
+      <img className="w-19" src="/logo.svg" alt="Logo" />
       <div
         className={`flex gap-8 transform transition-all duration-300 ease-out
           ${

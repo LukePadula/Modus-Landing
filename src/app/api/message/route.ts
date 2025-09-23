@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import { Pool } from "pg";
+import verifyCaptcha from "../lib/verifyCaptcha";
+import ratelimit from "../lib/ratelimit";
 
 const pool = new Pool({
   connectionString: process.env.NEON_DATABASE_URL,
@@ -7,18 +9,22 @@ const pool = new Pool({
 
 export async function POST(req: Request) {
   try {
-    const { name, email, company, message } = await req.json();
+    const body = await req.json();
+    const ip = req.headers.get("x-forwarded-for") ?? "anonymous";
 
-    if (!name || !email || !message) {
+    if (!body.name || !body.email || !body.message) {
       return NextResponse.json(
         { error: "Required infomation not provided" },
         { status: 400 }
       );
     }
 
+    await verifyCaptcha(body.token, ip);
+    await ratelimit(ip);
+
     const result = await pool.query(
       "INSERT INTO lead_message (name, email, ,company, message) VALUES ($1, $2, $3, $4) RETURNING *",
-      [name, email, company, message ?? false]
+      [body.name, body.email, body.company, body.message ?? false]
     );
 
     return NextResponse.json({ message: result.rows[0] });
