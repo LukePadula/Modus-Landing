@@ -37,7 +37,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
-      <form onSubmit={submitContactForm}>
+      <form>
         <div className="w-full bg-gray-50 p-5 relative pt-16 md:px-8 lg:px-14 pb-5">
           <label
             className="tracking-wide text-gray-700 text-xs font-bold mb-2"
