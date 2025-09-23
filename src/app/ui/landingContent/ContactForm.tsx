@@ -6,17 +6,17 @@ import axios from "axios";
 import Turnstile from "react-turnstile";
 
 export default function ContactForm() {
-  const submitContactForm = async () => {
-    try {
-      const res = await axios.post(
-        "/api/waitlist",
-        { email, token },
-        { headers: { "Content-Type": "application/json" } }
-      );
-    } catch (err) {
-      console.error("Error:", err);
-    }
-  };
+  // const submitContactForm = async () => {
+  //   try {
+  //     const res = await axios.post(
+  //       "/api/waitlist",
+  //       { email, token },
+  //       { headers: { "Content-Type": "application/json" } }
+  //     );
+  //   } catch (err) {
+  //     console.error("Error:", err);
+  //   }
+  // };
 
   return (
     <section id="contact" className="md:grid md:grid-cols-2">
