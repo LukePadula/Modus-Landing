@@ -7,7 +7,7 @@ import AlertModal from "./ui/AlertModal";
 export default function Home() {
   return (
     <div className="relative">
-      <AlertModal />
+      {/* <AlertModal /> */}
       <Hero />
       <LandingContent />
       <ContactForm />
