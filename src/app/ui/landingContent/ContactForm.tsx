@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import BackgroundGrid from "../hero/BackgroundGrid";
 import axios from "axios";
-import Turnstile from "react-turnstile";
-
+import { Turnstile } from "@marsidev/react-turnstile";
 export default function ContactForm() {
   // const submitContactForm = async () => {
   //   try {

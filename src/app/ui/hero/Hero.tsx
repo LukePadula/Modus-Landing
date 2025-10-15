@@ -8,7 +8,7 @@ import Header from "./Header";
 import SectionHeaderBackground from "../SectionHeaderBackground";
 import HeroImage from "../HeroImage";
 import axios from "axios";
-import Turnstile from "react-turnstile";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 export default function Hero() {
   const [email, setEmail] = useState("");
@@ -69,8 +69,8 @@ export default function Hero() {
             </div>
             <div className="mt-4">
               <Turnstile
-                sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-                onVerify={(token) => setToken(token)}
+                siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                onSuccess={(token) => setToken(token)}
               />
             </div>
           </div>

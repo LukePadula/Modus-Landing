@@ -8,7 +8,7 @@ export default function LaunchingSoon() {
         backgroundColor: "#FFC215",
       }}
     >
-      <small className="text-black text-center text-base md:text-sm font-semibold">
+      <small className="text-black text-center text-lg md:text-sm font-semibold">
         Launching Soon
       </small>
     </div>
