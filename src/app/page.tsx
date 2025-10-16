@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Hero from "./ui/hero/Hero";
 import LandingContent from "./ui/landingContent/LandingContent";
 import ContactForm from "./ui/landingContent/ContactForm";
@@ -5,12 +7,18 @@ import Footer from "./ui/Footer";
 import AlertModal from "./ui/AlertModal";
 
 export default function Home() {
+  const [alert, setAlert] = useState(false);
+
+  const showAlert = () => {
+    setAlert(true);
+    setTimeout(() => setAlert(false), 3000);
+  };
   return (
     <div className="relative">
-      {/* <AlertModal /> */}
-      <Hero />
+      {alert && <AlertModal />}
+      <Hero showAlert={showAlert} />
       <LandingContent />
-      <ContactForm />
+      <ContactForm showAlert={showAlert} />
       <Footer />
     </div>
   );

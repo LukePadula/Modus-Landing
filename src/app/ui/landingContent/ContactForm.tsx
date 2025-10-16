@@ -4,7 +4,12 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import BackgroundGrid from "../hero/BackgroundGrid";
 import axios from "axios";
 import { Turnstile } from "@marsidev/react-turnstile";
-export default function ContactForm() {
+
+interface ContactFormProps {
+  showAlert: () => void;
+}
+
+export default function ContactForm({ showAlert }: ContactFormProps) {
   // const submitContactForm = async () => {
   //   try {
   //     const res = await axios.post(

@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { log } from "node:console";
 import styles from "./AlertsModal.module.css";
 
 export default function AlertModal() {

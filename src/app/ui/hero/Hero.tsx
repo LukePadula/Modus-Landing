@@ -10,11 +10,13 @@ import HeroImage from "../HeroImage";
 import axios from "axios";
 import { Turnstile } from "@marsidev/react-turnstile";
 
-export default function Hero() {
+interface HeroFormProps {
+  showAlert: () => void;
+}
+
+export default function Hero({ showAlert }: HeroFormProps) {
   const [email, setEmail] = useState("");
   const [token, setToken] = useState<string | null>(null);
-
-  // const [consent, setConsent] = useState(false);
 
   const submitWaitlist = async () => {
     try {
@@ -23,6 +25,8 @@ export default function Hero() {
         { email, token },
         { headers: { "Content-Type": "application/json" } }
       );
+
+      showAlert();
     } catch (err) {
       console.error("Error:", err);
     }
@@ -34,7 +38,7 @@ export default function Hero() {
       className={`${styles.heroBackgroundGradient} h-screen relative text-white`}
     >
       <Header />
-      <div className="p-5 h-[94%] flex justify-items-center items-center md:px-18 lg:px-44">
+      <div className="p-5 h-[94%] flex justify-items-center items-center md:px-18 lg:px-44 xl:px-80">
         <BackgroundGrid lineType="dark" />
         <div className="absolute right-3 top-15 md:hidden">
           <LaunchingSoon />
