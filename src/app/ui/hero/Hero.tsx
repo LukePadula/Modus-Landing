@@ -71,7 +71,8 @@ export default function Hero({ showAlert }: HeroFormProps) {
                 <>
                   <div className=" bg-white flex relative w-[90%] h-14 mt-8 mb-2 rounded-sm max-w-86">
                     <input
-                      type="text"
+                      type="email"
+                      required
                       placeholder="Your Email"
                       className="bg-white text-black ps-2 w-full rounded-sm"
                       onChange={(e) => setEmail(e.target.value)}

@@ -56,7 +56,7 @@ export default function LandingContent() {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center px-5 md:px-18 lg:px-44 pb-5 md:pb-12 lg:pb-22 pt-0">
+    <section className="flex flex-col justify-center items-center px-6 md:px-18 lg:px-24 pb-5 md:pb-12 lg:pb-22 pt-0">
       <div className="mt-20 mb-14 text-center">
         <SectionHeaderBackground styleType="content">
           <h1 className="font-semibold text-3xl text-white">
