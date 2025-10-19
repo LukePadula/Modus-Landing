@@ -92,7 +92,7 @@ export default function ContactForm({ showAlert }: ContactFormProps) {
           </h1>
           <p className="text-black mb-5">
             {
-              "We&apos;d love to hear from you—whether it's feedback, ideas, or just to connect."
+              "We&apos;d love to hear from you—whether it&apos;s feedback, ideas, or just to connect."
             }
           </p>
           <div className="text-neutral-500 font-semibold">
@@ -110,7 +110,7 @@ export default function ContactForm({ showAlert }: ContactFormProps) {
           )}
           {success && (
             <div className="mb-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
-              Message sent successfully! We'll get back to you soon.
+              Message sent successfully! We&apos;ll get back to you soon.
             </div>
           )}
 
