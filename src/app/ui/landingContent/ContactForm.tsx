@@ -91,9 +91,8 @@ export default function ContactForm({ showAlert }: ContactFormProps) {
             Get in touch
           </h1>
           <p className="text-black mb-5">
-            {
-              "We&apos;d love to hear from you—whether it&apos;s feedback, ideas, or just to connect."
-            }
+            "We&apos;d love to hear from you—whether it&apos;s feedback, ideas,
+            or just to connect."
           </p>
           <div className="text-neutral-500 font-semibold">
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
