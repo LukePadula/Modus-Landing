@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 export default function Privacy() {
   return (
     <div className="px-5 md:px-18 lg:px-44 pb-5 md:pb-12 lg:pb-22 pt-8 text-black">
@@ -14,6 +16,7 @@ export default function Privacy() {
           our policies and practices, please do not use our Service.
         </p>
       </div>
+
       <h2 className="text-2xl mt-4">2. Information We Collect</h2>
       <h3 className="text-lg mt-4">2.1 Information You Provide Directly</h3>
       <div className="mt-4">
@@ -39,6 +42,7 @@ export default function Privacy() {
           </li>
         </ul>
       </div>
+
       <h3 className="text-lg mt-4">2.2 Information Collected Automatically</h3>
       <p>When you use our Service, we may automatically collect:</p>
       <div className="mt-4">
@@ -61,6 +65,7 @@ export default function Privacy() {
           </li>
         </ul>
       </div>
+
       <h3 className="text-lg mt-4">2.3 Third-Party Information</h3>
       <div className="mt-4">
         <p>
@@ -69,8 +74,8 @@ export default function Privacy() {
           our Service and prevent fraud.
         </p>
       </div>
-      <h2 className="text-2xl mt-4">3. How We Use Your Information</h2>
 
+      <h2 className="text-2xl mt-4">3. How We Use Your Information</h2>
       <div className="mt-4">
         <p>We use the information we collect for purposes including:</p>
       </div>
@@ -88,6 +93,7 @@ export default function Privacy() {
           <li>- Personalizing your experience with the Service</li>
         </ul>
       </div>
+
       <h2 className="text-2xl mt-4">4. How We Share Your Information</h2>
       <h3 className="text-lg mt-4">4.1 Service Providers</h3>
       <div className="mt-4">
@@ -97,6 +103,7 @@ export default function Privacy() {
           storage providers, payment processors, and analytics services.
         </p>
       </div>
+
       <h3 className="text-lg mt-4">4.2 Legal Compliance</h3>
       <div className="mt-4">
         <p>
@@ -104,12 +111,13 @@ export default function Privacy() {
           response to subpoenas, court orders, or other legal requests.
         </p>
       </div>
+
       <h3 className="text-lg mt-4">4.3 Business Transfers</h3>
-      <div className="mt-4"></div>
       <p>
         If Modus is involved in a merger, acquisition, or sale of assets, your
         information may be transferred as part of that transaction.
       </p>
+
       <h3 className="text-lg mt-4">4.4 User Choice</h3>
       <div className="mt-4">
         <p>
@@ -117,6 +125,7 @@ export default function Privacy() {
           parties. You have control over how your data is used.
         </p>
       </div>
+
       <h2 className="text-2xl mt-4">5. Data Security</h2>
       <div className="mt-4">
         <p>
@@ -125,6 +134,7 @@ export default function Privacy() {
           alteration, disclosure, or destruction. These measures include:
         </p>
       </div>
+
       <div className="mt-4">
         <ul>
           <li>- Encryption of sensitive data in transit and at rest</li>
@@ -135,6 +145,7 @@ export default function Privacy() {
           </li>
         </ul>
       </div>
+
       <div className="mt-4">
         <p>
           However, no method of transmission over the Internet is 100% secure.
@@ -142,6 +153,7 @@ export default function Privacy() {
           absolute security.
         </p>
       </div>
+
       <h2 className="text-2xl mt-4">6. Data Retention</h2>
       <div className="mt-4">
         <p>
@@ -151,6 +163,7 @@ export default function Privacy() {
           legal obligations to retain certain information.
         </p>
       </div>
+
       <h2 className="text-2xl mt-4">7. Your Rights and Choices</h2>
       <h3 className="text-lg mt-4">7.1 Access and Portability</h3>
       <div className="mt-4">
@@ -159,6 +172,7 @@ export default function Privacy() {
           hold about you and to receive it in a portable format.
         </p>
       </div>
+
       <h3 className="text-lg mt-4">7.2 Correction and Deletion</h3>
       <div className="mt-4">
         <p>
@@ -166,6 +180,7 @@ export default function Privacy() {
           personal information, subject to certain exceptions.
         </p>
       </div>
+
       <h3 className="text-lg mt-4">7.3 Opt-Out</h3>
       <div className="mt-4">
         <p>
@@ -173,6 +188,7 @@ export default function Privacy() {
           the unsubscribe link in our emails or contacting us directly.
         </p>
       </div>
+
       <h3 className="text-lg mt-4">7.4 Cookie Management</h3>
       <div className="mt-4">
         <p>
@@ -181,10 +197,10 @@ export default function Privacy() {
           Service.
         </p>
       </div>
+
       <h2 className="text-2xl mt-4">
         8. GDPR and International Privacy Rights
       </h2>
-      <div className="mt-4"></div>
       <p>
         If you are located in the European Union, United Kingdom, or other
         jurisdictions with privacy laws, you have additional rights under
@@ -202,14 +218,15 @@ export default function Privacy() {
           </li>
         </ul>
       </div>
+
       <h2 className="text-2xl mt-4">9. Children's Privacy</h2>
-      <div className="mt-4"></div>
       <p>
         Our Service is not intended for children under the age of 13. We do not
         knowingly collect personal information from children under 13. If we
         become aware that we have collected such information, we will delete it
         promptly.
       </p>
+
       <h2 className="text-2xl mt-4">10. Third-Party Links</h2>
       <div className="mt-4">
         <p>
@@ -219,6 +236,7 @@ export default function Privacy() {
           personal information.
         </p>
       </div>
+
       <h2 className="text-2xl mt-4">11. Changes to This Privacy Policy</h2>
       <div className="mt-4">
         <p>
@@ -230,6 +248,7 @@ export default function Privacy() {
           changes.
         </p>
       </div>
+
       <h2 className="text-2xl mt-4">12. Contact Us</h2>
       <div className="mt-4">
         <p>
@@ -238,6 +257,7 @@ export default function Privacy() {
           contact us at:
         </p>
       </div>
+
       <div className="mt-4">
         <p>
           <strong>Email:</strong> privacy@modus.app
@@ -247,7 +267,9 @@ export default function Privacy() {
           <strong>Phone:</strong> [Your Phone Number]
         </p>
       </div>
+
       <p>We will respond to your inquiry within 30 days of receipt.</p>
+
       <h2 className="text-2xl mt-4">13. Data Protection Officer</h2>
       <div className="mt-4">
         <p>
@@ -256,6 +278,7 @@ export default function Privacy() {
           <span className="highlight">dpo@modus.app</span>
         </p>
       </div>
+
       <div className="footer">
         <p>
           By using Modus, you acknowledge that you have read and understood this

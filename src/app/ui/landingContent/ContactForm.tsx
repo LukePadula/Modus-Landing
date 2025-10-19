@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import BackgroundGrid from "../hero/BackgroundGrid";
 import axios from "axios";
-import { Turnstile } from "@marsidev/react-turnstile";
 import { useState } from "react";
 
 interface ContactFormProps {
