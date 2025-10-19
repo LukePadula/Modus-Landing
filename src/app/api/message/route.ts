@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     await ratelimit(ip);
 
     const result = await pool.query(
-      "INSERT INTO lead_message (name, email, ,company, message) VALUES ($1, $2, $3, $4) RETURNING *",
+      "INSERT INTO lead_message (name, email, company, message) VALUES ($1, $2, $3, $4) RETURNING *",
       [body.name, body.email, body.company, body.message ?? false]
     );
 

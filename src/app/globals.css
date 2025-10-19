@@ -22,6 +22,15 @@
   }
 }
 
+@layer components {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #333 !important;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -74,3 +83,32 @@ select:focus {
     var(--token-55b95a12-f700-4ce1-8c5a-09fcad9bf53d, rgb(241, 235, 235)) 100%
   );
 } */
+
+/* HTML: <div class="loader"></div> */
+.spinner {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background: #4251e2;
+  box-shadow: 0 0 0 0 #4251e2;
+  animation: l2 1.8s infinite linear;
+  position: relative;
+}
+.spinner:before,
+.spinner:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 #0004;
+  animation: inherit;
+  animation-delay: -1s;
+}
+.spinner:after {
+  animation-delay: -1s;
+}
+@keyframes l2 {
+  100% {
+    box-shadow: 0 0 0 22px #f3000000;
+  }
+}

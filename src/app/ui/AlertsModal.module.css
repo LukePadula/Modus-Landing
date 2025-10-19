@@ -2,9 +2,9 @@
   animation: slideInOut 4s ease-in-out forwards;
 }
 
-.bg {
+/* .bg {
   background-color: #518f57;
-}
+} */
 
 @keyframes slideInOut {
   0% {

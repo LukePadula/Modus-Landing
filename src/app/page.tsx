@@ -11,7 +11,7 @@ export default function Home() {
 
   const showAlert = () => {
     setAlert(true);
-    setTimeout(() => setAlert(false), 3000);
+    setTimeout(() => setAlert(false), 4000);
   };
   return (
     <div className="relative">
