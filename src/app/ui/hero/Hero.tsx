@@ -60,11 +60,11 @@ export default function Hero({ showAlert }: HeroFormProps) {
           <div className="animate-slide-up opacity-0">
             <SectionHeaderBackground styleType="hero">
               <h1 className="text-5xl text-white font-semibold leading-tight">
-                Zoriana
+                Streamline
               </h1>
             </SectionHeaderBackground>
             <h1 className="text-5xl font-semibold leading-tight">
-              please smooch me lady!
+              your property inspections
             </h1>
             <div className="mt-8 mb-4">
               {!waitlistJoined && (
