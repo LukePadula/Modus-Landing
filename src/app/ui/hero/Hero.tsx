@@ -11,6 +11,7 @@ import axios from "axios";
 import { Turnstile } from "@marsidev/react-turnstile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 interface HeroFormProps {
   showAlert: () => void;
@@ -96,9 +97,9 @@ export default function Hero({ showAlert }: HeroFormProps) {
                     <small className="text-indigo-100 text-sm">
                       Joining our waitlist means you agree to our{" "}
                     </small>
-                    <a href="/privacy" className="underline text-sm">
+                    <Link href="/privacy" className="underline text-sm">
                       privacy policy
-                    </a>
+                    </Link>
                     .
                   </div>
                 </>
@@ -110,7 +111,7 @@ export default function Hero({ showAlert }: HeroFormProps) {
                       className="scale-140 mr-3"
                       icon={faCircleCheck}
                     />
-                    <h2 className="text-lg font-semibold">You're in!</h2>
+                    <h2 className="text-lg font-semibold">You&apos;re in!</h2>
                   </div>
                   <small>
                     We will keep you updated with updates and exclusive early

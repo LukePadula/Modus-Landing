@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 interface Props {
   page: "hero" | "content";
@@ -54,12 +55,12 @@ export default function Header({ page }: Props) {
         }`}
     >
       {page == "content" && (
-        <a href="/">
+        <Link href="/">
           <FontAwesomeIcon icon={faArrowLeft} />
           <small className="text-base ml-2 z-30 font-semibold font-indigo-900">
             modus
           </small>
-        </a>
+        </Link>
       )}
       {page == "hero" && (
         <small className="text-base ml-3 z-30 font-semibold font-indigo-900">
